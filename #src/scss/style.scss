@@ -1,0 +1,44 @@
+@import "nullstyle";
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"),
+            url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+@import "fonts";
+
+body {
+    background: #e5e5e5;
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: 400;
+}
+.container {
+    padding: 0 200px;
+}
+.wrapper {
+    width: 1600px;
+    margin: 0 auto;
+}
+.menu {
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+}
+/*
+.menu__blocks {
+    display: flex;
+}
+.menu__logo {
+}
+.menu__title {
+}
+.menu__nav {
+}
+.menu__phone {
+}
+*/
