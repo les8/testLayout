@@ -15,7 +15,7 @@
                     <div class="menu__logo">
                         <img src="./img/logo.svg" alt="logo">
                         <div class="menu__title">
-                            <h4>Название</h4>
+                            <h5>Название</h5>
                             <p>И какой нибудь лозунг</p>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
             </div>
         </div>
         <header class="header">
-            <h1>Услуги по строительству и ремонту железнодорожных путей</h1>
+            <h1>Услуги по строительству<br>и ремонту железнодорожных путей</h1>
             <p>Компания проводит строительные и ремонтные работы на территории более чем 20 субъектов Российской Федерации</p>
             <div class="form">
                 <h3>Оставьте заявку на <span>бесплатную</span> консультацию</h3>
@@ -53,9 +53,9 @@
                             <input type="email" placeholder="company@mail.com">
                         </li>                        
                     </ul>
-                    <ul class="form__column2">                        
-                        <input type="submit">                    
-                    </ul>
+                    <div class="form__column2">                        
+                        <input type="submit" class="form__submit">                    
+                    </div>
                 </form>
             </div>    
         </header>        
@@ -73,14 +73,14 @@
             <div class="container">
                 <h2>Наше портфолио</h2>
                 <div class="portfolio__carusel">
-                    <button class="portfolio__next">
+                    <button class="portfolio__button">
                         <svg width="30" height="62" viewBox="0 0 30 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M28 2L2 31L28 60" stroke="#4169C1" stroke-opacity="0.38" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
                     <ul class="portfolio__content">
                         <li>
-                            <img src="./img/pictures/portfolio.png" alt="railways">
+                            <img src="./img/pictures/portfolio.png" alt="railways" class="portfolio__image">
                             <div class="portfolio__info">
                                 <h3>Ремонт эстакад</h3>
                                 <p>Капитальный ремонт и еще че нибудь напишите а то слишком мало выходит</p>
@@ -95,7 +95,7 @@
                             </div>
                         </li>
                     </ul>
-                    <button class="portfolio__next">
+                    <button class="portfolio__button">
                         <svg width="30" height="62" viewBox="0 0 30 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 60L28 31L2 2" stroke="#4169C1" stroke-opacity="0.38" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -110,7 +110,6 @@
                     <li>
                         <div class="advantages__icon">
                             <img src="./img/icons/advantages/Money.svg" alt="money">
-                            <img src="./img/icons/advantages/Ellipse.svg" alt="Ellipse">
                         </div>
                         <div class="advantages__info">
                             <h3>Экономия стредств</h3>
@@ -120,7 +119,6 @@
                     <li>
                         <div class="advantages__icon">
                             <img src="./img/icons/advantages/Lightbulb.svg" alt="Lightbulb">
-                            <img src="./img/icons/advantages/Ellipse.svg" alt="Ellipse">
                         </div>
                         <div class="advantages__info">
                             <h3>Большой опыт</h3>
@@ -130,7 +128,6 @@
                     <li>
                         <div class="advantages__icon">
                             <img src="./img/icons/advantages/Wallet.svg" alt="Wallet">
-                            <img src="./img/icons/advantages/Ellipse.svg" alt="Ellipse">
                         </div>                    
                         <div class="advantages__info">
                             <h3>Удобная оплата</h3>
@@ -140,7 +137,6 @@
                     <li>
                         <div class="advantages__icon">
                             <img src="./img/icons/advantages/Eject.svg" alt="Eject">
-                            <img src="./img/icons/advantages/Ellipse.svg" alt="Ellipse">
                         </div>                    
                         <div class="advantages__info">
                             <h3>Оперативность</h3>
@@ -150,7 +146,6 @@
                     <li>
                         <div class="advantages__icon">
                             <img src="./img/icons/advantages/ThumbsUp.svg" alt="ThumbsUp">
-                            <img src="./img/icons/advantages/Ellipse.svg" alt="Ellipse">
                         </div>                    
                         <div class="advantages__info">
                             <h3>Высокий сервис</h3>
@@ -160,7 +155,6 @@
                     <li>
                         <div class="advantages__icon">
                             <img src="./img/icons/advantages/CircleWavyCheck.svg" alt="CircleWavyCheck">
-                            <img src="./img/icons/advantages/Ellipse.svg" alt="Ellipse">
                         </div>                    
                         <div class="advantages__info">
                             <h3>Качество</h3>
@@ -177,12 +171,16 @@
                     <div class="about__info">
                         <h3>Компания ООО”Название”</h3>
                         <p>Оказывает широкий спектр услуг по строительству и ремонту железнодорожных путей, Ремонт железнодорожных тупиков, стрелочных переводов, переездов. Опытные сотрудники, наличие необходимого оборудования позволяет в кратчайшие сроки выполнить работы любой сложности качественно и в кратчайшие сроки. Гибкая ценовая политика, наличие СРО. Подбор материалов от новых до Б/У от партнёров.</p>
-                        <div class="about__certificate">
-                            <img src="./img/pictures/about/certificate1.png" alt="certificate1">
-                            <img src="./img/pictures/about/certificate2.png" alt="certificate2">
-                        </div>
+                        <ul class="about__certificate">
+                            <li>
+                                <img src="./img/pictures/about/certificate1.png" alt="certificate1">
+                            </li>
+                            <li>
+                                <img src="./img/pictures/about/certificate2.png" alt="certificate2">
+                            </li>   
+                        </ul>
                     </div>
-                    <img src="./img/pictures/about/railways.png" alt="railways">
+                    <img src="./img/pictures/about/railways.png" alt="railways" class="about__picture">
                 </div>
             </div>
         </div>        
@@ -193,22 +191,35 @@
                     <div class="footer__info">
                         <ul class="footer__text">
                             <li>Телефон:</li>
-                            <li>E-mail:</li>
+                            <li>:)</li>
+                            <li>E-mail:</li>                            
                             <li>Адрес:</li>
                         </ul>
                         <ul class="footer__data">
-                            <li>8(902)272-93-14</li>
-                            <li>8(982)178-03-07</li>
-                            <li>nasvaniye@mail.ru</li>
-                            <li>г. Екатеринбург, ул.  Колмогорова, дом 67</li>
+                            <li><a href="tel:+79022729314" target="_blank">8(902)272-93-14</a></li>
+                            <li><a href="tel:+79821780307" target="_blank">8(982)178-03-07</a></li>
+                            <li><a href="mailto:nasvaniye@mail.ru">nasvaniye@mail.ru</a></li>
+                            <li><address>г. Екатеринбург, ул.  Колмогорова, дом 67</address></li>
                         </ul>
                     </div>
                     <h4>ООО “Название”</h4>
-                    <div class="footer__links">
-                        <a href="https://www.whatsapp.com"><img src="./img/icons/footer/WS.svg" alt="ws link"></a>
-                        <a href="https://www.whatsapp.com"><img src="./img/icons/footer/Phone.svg" alt="Phone link"></a>
-                        <a href="https://www.whatsapp.com"><img src="./img/icons/footer/email.svg" alt="email link"></a>
-                    </div>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://www.whatsapp.com" target="_blank">
+                                <img src="./img/icons/footer/WS.svg" alt="ws link">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+79022729314" target="_blank">
+                                <img src="./img/icons/footer/Phone.svg" alt="Phone link">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:nasvaniye@mail.ru" target="_blank">
+                                <img src="./img/icons/footer/email.svg" alt="email link">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="form">
                     <h3>Остались вопросы?</h3>
@@ -226,18 +237,21 @@
                                 <p>Почта</p>
                                 <input type="email" placeholder="company@mail.com">
                             </li>
-                            <li class="form__radio">                        
-                                <input type="radio">
+                            <li class="form__checkbox">
+                                <div class="form__sqare">
+                                    <input type="checkbox" value="None" id="squared" name="check" checked/>
+                                    <label for="squared"></label>
+                                </div>
                                 <p>Даю свое согласие<br>с <span>политикой конфиденциальности</span></p>
                             </li>
                         </ul>
-                        <ul class="form__column2">
-                            <li class="form__comment">
+                        <div class="form__column2">
+                            <div class="form__comment">
                                 <p>Комментарий</p>
-                                <input type="text" placeholder="Напишите ваш вопрос...">
-                            </li>
-                            <input type="submit">                    
-                        </ul>
+                                <textarea placeholder="Напишите ваш вопрос..."></textarea>
+                            </div>
+                            <input type="submit" class="form__submit">                    
+                        </div>
                     </form>
                 </div>                
             </div>
@@ -248,7 +262,7 @@
                     <p>Все права защищены.</p>
                     <div class="developer__info">
                         <img src="./img/icons/copyright/developerLogo.svg" alt="developerLogo">
-                        <span>Разработка сайта - студия “ТвойСтартап”</span>
+                        <a href="https://your-startup.space" target="_blank">Разработка сайта - студия “ТвойСтартап”</a>
                     </div>
                 </div>
             </div>
