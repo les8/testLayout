@@ -1,0 +1,31 @@
+.copyright {
+    padding: 35px 0 37px;
+    background: #001a33;
+}
+.copyright__info {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(255, 255, 255, 0.53);
+        position: relative;
+        top: 7px;
+    }
+}
+.copyright__developer {
+    img {
+        position: relative;
+        top: 5px;
+        margin-right: 4px;
+    }
+    a {
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 130%;
+        text-decoration-line: underline;
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,40 @@
+.advantages {
+    padding: 79px 0 80px;
+    background-color: #ffffff;
+    .container {
+        h2 {
+            margin-bottom: 33px;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                display: flex;
+                width: 376px;
+                margin-bottom: 34px;
+                margin-right: 36px;
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+.advantages__icon {
+    img {
+        margin-right: 37px;
+        background-image: url("./../img/icons/advantages/Ellipse.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        top: -12px;
+        position: relative;
+    }
+}
+.advantages__info {
+    p {
+        font-size: 14px;
+        line-height: 150%;
+        color: rgba(0, 26, 51, 0.7);
+        width: 277px;
+    }
+}

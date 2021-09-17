@@ -1,0 +1,44 @@
+.about {
+    padding: 81px 0 145px;
+    background: #f4f8ff;
+    h2 {
+        margin-bottom: 50px;
+    }
+}
+.about__block {
+    display: flex;
+    .about__picture {
+        width: 790px;
+        height: 441px;
+        position: relative;
+        left: -175px;
+        top: 73px;
+    }
+}
+.about__info {
+    z-index: 3;
+    padding: 71px 71px 48px 73px;
+    color: #ffffff;
+    background-color: #4169c1;
+    background-image: url("./../img/pictures/about/rail.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-blend-mode: screen;
+    h3 {
+        color: #ffffff;
+    }
+    p {
+        width: 441px;
+        line-height: 156.46%;
+        margin-top: 14px;
+        margin-bottom: 15px;
+    }
+}
+.about__certificate {
+    display: flex;
+    li {
+        &:first-child {
+            margin-right: 23px;
+        }
+    }
+}
