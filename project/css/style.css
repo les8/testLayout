@@ -561,28 +561,27 @@ h5 {
 .about {
   padding: 81px 0 145px;
   background: #f4f8ff;
+  position: relative;
 }
 
 .about h2 {
   margin-bottom: 50px;
 }
 
-.about__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.about__block .about__picture {
+.about__picture {
   width: 790px;
   height: 441px;
-  position: relative;
-  left: -175px;
-  top: 73px;
+  position: absolute;
+  z-index: 0;
+  bottom: 219px;
+  left: 38.125%;
 }
 
 .about__info {
-  z-index: 3;
+  position: relative;
+  width: 585px;
+  height: 588px;
+  z-index: 100;
   padding: 71px 71px 48px 73px;
   color: #ffffff;
   background-color: #4169c1;
@@ -643,21 +642,27 @@ h5 {
   margin-bottom: 21px;
 }
 
-.footer .container .form form {
+.footer .container .form form .form__column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.footer .container .form form .form__column1 {
-  margin-right: 29px;
+.footer .container .form form .form__column .form__input .form__lists {
+  display: block;
 }
 
-.footer .container .form form .form__column1 .form__input {
+.footer .container .form form .form__column .form__input .form__lists li:last-child {
+  margin-bottom: 0;
+}
+
+.footer .container .form form .form__column .form__input .form__lists .form__list {
   margin-bottom: 10px;
 }
 
-.footer .container .form form .form__column1 .form__input p {
+.footer .container .form form .form__column .form__input .form__lists .form__list p {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
@@ -665,7 +670,7 @@ h5 {
   margin-bottom: 2px;
 }
 
-.footer .container .form form .form__column1 .form__input input {
+.footer .container .form form .form__column .form__input .form__lists .form__list input {
   width: 278px;
   height: 45px;
   background: #eef2f9;
@@ -677,25 +682,26 @@ h5 {
           box-sizing: border-box;
 }
 
-.footer .container .form form .form__column1 .form__checkbox {
+.footer .container .form form .form__column .form__checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 14px;
+  margin-top: 16px;
+  width: 278px;
 }
 
-.footer .container .form form .form__column1 .form__checkbox p {
+.footer .container .form form .form__column .form__checkbox p {
   font-size: 12px;
   line-height: 15px;
   color: rgba(16, 16, 16, 0.4);
 }
 
-.footer .container .form form .form__column1 .form__checkbox p span {
+.footer .container .form form .form__column .form__checkbox p span {
   color: #001a33;
   border-bottom: 1px #001a33 solid;
 }
 
-.footer .container .form form .form__column1 .form__sqare {
+.footer .container .form form .form__column .form__sqare {
   width: 12px;
   height: 12px;
   position: relative;
@@ -705,7 +711,7 @@ h5 {
   margin-right: 5px;
 }
 
-.footer .container .form form .form__column1 .form__sqare label {
+.footer .container .form form .form__column .form__sqare label {
   width: 6px;
   height: 6px;
   position: absolute;
@@ -714,7 +720,7 @@ h5 {
   cursor: pointer;
 }
 
-.footer .container .form form .form__column1 .form__sqare label:after {
+.footer .container .form form .form__column .form__sqare label:after {
   content: "";
   width: 6px;
   height: 6px;
@@ -726,15 +732,19 @@ h5 {
   opacity: 0;
 }
 
-.footer .container .form form .form__column1 .form__sqare input[type="checkbox"] {
+.footer .container .form form .form__column .form__sqare input[type="checkbox"] {
   visibility: hidden;
 }
 
-.footer .container .form form .form__column1 .form__sqare input[type="checkbox"]:checked + label:after {
+.footer .container .form form .form__column .form__sqare input[type="checkbox"]:checked + label:after {
   opacity: 1;
 }
 
-.footer .container .form form .form__column2 .form__comment p {
+.footer .container .form form .form__column .form__comment {
+  margin-left: 29px;
+}
+
+.footer .container .form form .form__column .form__comment p {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
@@ -742,7 +752,7 @@ h5 {
   margin-bottom: 2px;
 }
 
-.footer .container .form form .form__column2 .form__comment textarea {
+.footer .container .form form .form__column .form__comment textarea {
   padding: 14px;
   width: 278px;
   height: 195px;
@@ -753,9 +763,10 @@ h5 {
   border-radius: 5px;
 }
 
-.footer .container .form form .form__column2 .form__submit {
+.footer .container .form form .form__column .form__submit {
   width: 278px;
   margin-top: 15px;
+  margin-left: 29px;
   height: 50px;
   font-weight: bold;
   text-align: center;
@@ -763,6 +774,30 @@ h5 {
   color: #ffffff;
   background: #fd6612;
   border-radius: 23.5px;
+}
+
+.footer .container .form form .form__column li:first-child {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.footer .container .form form .form__column li:nth-child(2) {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.footer .container .form form .form__column li:nth-child(3) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.footer .container .form form .form__column li:nth-child(4) {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
 }
 
 .footer__block {
@@ -1058,17 +1093,29 @@ h5 {
         flex-wrap: wrap;
   }
 
-  .portfolio__content li .portfolio__image {
+  .portfolio__content picture {
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 340px;
+  }
+
+  .portfolio__content li .portfolio__image {
+    width: inherit;
+    height: inherit;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 -150px;
+       object-position: 0 -150px;
   }
 
   .portfolio__info {
     padding: 43px 60px 52px 60px;
     width: 100%;
+    height: auto;
     top: 0;
+  }
+
+  .portfolio__info .portfolio__checklist {
+    display: block;
   }
 
   .portfolio__info p {
@@ -1104,8 +1151,232 @@ h5 {
     margin-right: 5px;
   }
 
+  .portfolio__info ul li picture {
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+  }
+
   .portfolio__info button {
     width: 100%;
+  }
+
+  .advantages {
+    padding: 70px 0 14px;
+  }
+
+  .advantages .container h2 {
+    margin-bottom: 50px;
+  }
+
+  .advantages .container ul li {
+    display: block;
+    width: 277px;
+    margin-bottom: 70px;
+    margin-right: 41px;
+  }
+
+  .advantages .container ul li:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .advantages .container ul li:nth-child(3) {
+    margin-right: 41px;
+  }
+
+  .about {
+    padding: 70px 0 312px;
+    position: relative;
+  }
+
+  .about h2 {
+    margin-bottom: 27px;
+  }
+
+  .about__picture {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    z-index: 0;
+    bottom: 70px;
+    left: 0;
+  }
+
+  .about__info {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    padding: 53px 59px 48px;
+    color: #ffffff;
+    background-color: #4169c1;
+    background-image: url("./../img/pictures/about/rail.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-blend-mode: screen;
+    background-size: contain;
+  }
+
+  .about__info h3 {
+    color: #ffffff;
+  }
+
+  .about__info p {
+    width: 441px;
+    line-height: 156.46%;
+    margin-top: 14px;
+    margin-bottom: 15px;
+  }
+
+  .about__certificate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .about__certificate li:first-child {
+    margin-right: 23px;
+  }
+
+  .footer {
+    padding-top: 38px;
+    height: 505px;
+  }
+
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .footer .container .form {
+    width: 56.25%;
+    height: auto;
+    bottom: 0;
+    padding: 30px 40px 23px;
+  }
+
+  .footer .container .form h3 {
+    margin-bottom: 21px;
+  }
+
+  .footer .container .form form .form__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .footer .container .form form .form__column .form__input {
+    width: 100%;
+  }
+
+  .footer .container .form form .form__column .form__input .form__lists {
+    width: 100%;
+  }
+
+  .footer .container .form form .form__column .form__input .form__lists li {
+    width: 100%;
+  }
+
+  .footer .container .form form .form__column .form__input .form__lists li:last-child {
+    margin-bottom: 10px;
+  }
+
+  .footer .container .form form .form__column .form__input .form__lists .form__list input {
+    width: 100%;
+  }
+
+  .footer .container .form form .form__column .form__checkbox {
+    margin-top: 0;
+  }
+
+  .footer .container .form form .form__column .form__comment {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .footer .container .form form .form__column .form__comment textarea {
+    width: 100%;
+    height: 143px;
+  }
+
+  .footer .container .form form .form__column .form__submit {
+    width: 100%;
+    margin-top: 3px;
+    margin-left: 0;
+    margin-bottom: 12px;
+  }
+
+  .footer .container .form form .form__column li {
+    width: 100%;
+  }
+
+  .footer .container .form form .form__column li:first-child {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+
+  .footer .container .form form .form__column li:nth-child(2) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+
+  .footer .container .form form .form__column li:nth-child(3) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .footer .container .form form .form__column li:nth-child(4) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .footer__block {
+    margin-right: 21px;
+    height: auto;
+  }
+
+  .footer__block h2 {
+    margin-bottom: 30px;
+  }
+
+  .footer__block h4 {
+    margin-top: 77px;
+    margin-bottom: 72px;
+  }
+
+  .copyright {
+    height: 180px;
+    padding: 38px 0 0;
+  }
+
+  .copyright__info {
+    display: block;
+  }
+
+  .copyright__info p {
+    margin-bottom: 47px;
+  }
+
+  .copyright__developer img {
+    position: relative;
+    top: 5px;
+    margin-right: 4px;
+  }
+
+  .copyright__developer a span {
+    width: 151px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
 
   .container {

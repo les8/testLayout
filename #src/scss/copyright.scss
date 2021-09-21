@@ -29,3 +29,30 @@
         color: #ffffff;
     }
 }
+
+@media (max-width: 960px) and (min-width: 640px) {
+    .copyright {
+        height: 180px;
+        padding: 38px 0 0;
+    }
+    .copyright__info {
+        display: block;
+
+        p {
+            margin-bottom: 47px;
+        }
+    }
+    .copyright__developer {
+        img {
+            position: relative;
+            top: 5px;
+            margin-right: 4px;
+        }
+        a {
+            span {
+                width: 151px;
+                display: inline-flex;
+            }
+        }
+    }
+}

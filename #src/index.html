@@ -89,10 +89,10 @@
                                 <p>Капитальный ремонт и еще че нибудь напишите а то слишком мало выходит</p>
                                 <h4>Проделанные работы:</h4>
                                 <ul>
-                                    <li><img src="./img/icons/portfolio/check.svg" alt="check icon">Выкопали ямы (незнай зачем)</li>
-                                    <li><img src="./img/icons/portfolio/check.svg" alt="check icon">Рельсы рельсы, шпалы шпалы</li>
-                                    <li><img src="./img/icons/portfolio/check.svg" alt="check icon">Положили рельсы</li>
-                                    <li><img src="./img/icons/portfolio/check.svg" alt="check icon">Ехал поезд запоздалый</li>
+                                    <li><img src="./img/icons/portfolio/check.svg" alt="check icon" class='portfolio__checklist'>Выкопали ямы (незнай зачем)</li>
+                                    <li><img src="./img/icons/portfolio/check.svg" alt="check icon" class='portfolio__checklist'>Рельсы рельсы, шпалы шпалы</li>
+                                    <li><img src="./img/icons/portfolio/check.svg" alt="check icon" class='portfolio__checklist'>Положили рельсы</li>
+                                    <li><img src="./img/icons/portfolio/check.svg" alt="check icon" class='portfolio__checklist'>Ехал поезд запоздалый</li>
                                 </ul>
                                 <button>Оставить заявку</button>
                             </div>
@@ -170,22 +170,20 @@
         <div class="about">
             <div class="container">
                 <h2>О нашей компании</h2>
-                <div class="about__block">
-                    <div class="about__info">
-                        <h3>Компания ООО”Название”</h3>
-                        <p>Оказывает широкий спектр услуг по строительству и ремонту железнодорожных путей, Ремонт железнодорожных тупиков, стрелочных переводов, переездов. Опытные сотрудники, наличие необходимого оборудования позволяет в кратчайшие сроки выполнить работы любой сложности качественно и в кратчайшие сроки. Гибкая ценовая политика, наличие СРО. Подбор материалов от новых до Б/У от партнёров.</p>
-                        <ul class="about__certificate">
-                            <li>
-                                <img src="./img/pictures/about/certificate1.png" alt="certificate1">
-                            </li>
-                            <li>
-                                <img src="./img/pictures/about/certificate2.png" alt="certificate2">
-                            </li>   
-                        </ul>
-                    </div>
-                    <img src="./img/pictures/about/railways.png" alt="railways" class="about__picture">
+                <div class="about__info">
+                    <h3>Компания ООО”Название”</h3>
+                    <p>Оказывает широкий спектр услуг по строительству и ремонту железнодорожных путей, Ремонт железнодорожных тупиков, стрелочных переводов, переездов. Опытные сотрудники, наличие необходимого оборудования позволяет в кратчайшие сроки выполнить работы любой сложности качественно и в кратчайшие сроки. Гибкая ценовая политика, наличие СРО. Подбор материалов от новых до Б/У от партнёров.</p>
+                    <ul class="about__certificate">
+                        <li>
+                            <img src="./img/pictures/about/certificate1.png" alt="certificate1">
+                        </li>
+                        <li>
+                            <img src="./img/pictures/about/certificate2.png" alt="certificate2">
+                        </li>   
+                    </ul>
                 </div>
             </div>
+            <img src="./img/pictures/about/railways.png" alt="railways" class="about__picture">
         </div>        
         <div class="footer">
             <div class="container">
@@ -227,19 +225,23 @@
                 <div class="form">
                     <h3>Остались вопросы?</h3>
                     <form action="URL">
-                        <ul class="form__column1">
+                        <ul class="form__column">
                             <li class="form__input">
-                                <p>Имя</p>
-                                <input type="text" placeholder="Михаил">
-                            </li>
-                            <li class="form__input">
-                                <p>Телефон</p>
-                                <input type="tel" placeholder="8 (800) 535 35 35">
-                            </li>
-                            <li class="form__input">
-                                <p>Почта</p>
-                                <input type="email" placeholder="company@mail.com">
-                            </li>
+                                <ul class="form__lists">
+                                    <li class="form__list">
+                                        <p>Имя</p>
+                                        <input type="text" placeholder="Михаил">
+                                    </li>
+                                    <li class="form__list">
+                                        <p>Телефон</p>
+                                        <input type="tel" placeholder="8 (800) 535 35 35">
+                                    </li>
+                                    <li class="form__list">
+                                        <p>Почта</p>
+                                        <input type="email" placeholder="company@mail.com">
+                                    </li>
+                                </ul>                                
+                            </li>                            
                             <li class="form__checkbox">
                                 <div class="form__sqare">
                                     <input type="checkbox" value="None" id="squared" name="check" checked/>
@@ -247,14 +249,14 @@
                                 </div>
                                 <p>Даю свое согласие<br>с <span>политикой конфиденциальности</span></p>
                             </li>
-                        </ul>
-                        <div class="form__column2">
-                            <div class="form__comment">
+                            <li class="form__comment">
                                 <p>Комментарий</p>
                                 <textarea placeholder="Напишите ваш вопрос..."></textarea>
-                            </div>
-                            <input type="submit" class="form__submit">                    
-                        </div>
+                            </li>
+                            <li>
+                                <input type="submit" class="form__submit"> 
+                            </li>
+                        </ul>
                     </form>
                 </div>                
             </div>
@@ -265,7 +267,7 @@
                     <p>Все права защищены.</p>
                     <div class="copyright__developer">
                         <img src="./img/icons/copyright/developerLogo.svg" alt="developerLogo">
-                        <a href="https://your-startup.space" target="_blank">Разработка сайта - студия “ТвойСтартап”</a>
+                        <a href="https://your-startup.space" target="_blank"><span>Разработка сайта - студия “ТвойСтартап”</span></a>
                     </div>
                 </div>
             </div>

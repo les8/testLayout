@@ -19,32 +19,43 @@
                 margin-bottom: 21px;
             }
             form {
-                display: flex;
-                .form__column1 {
-                    margin-right: 29px;
+                .form__column {
+                    display: flex;
+                    flex-wrap: wrap;
                     .form__input {
-                        margin-bottom: 10px;
-                        p {
-                            font-weight: 300;
-                            font-size: 14px;
-                            line-height: 18px;
-                            color: #001a33;
-                            margin-bottom: 2px;
-                        }
-                        input {
-                            width: 278px;
-                            height: 45px;
-                            background: #eef2f9;
-                            border: 1px solid #e7ecf3;
-                            border-radius: 5px;
-                            padding-left: 15px;
-                            border: 1px solid #e7ecf3;
-                            box-sizing: border-box;
+                        .form__lists {
+                            display: block;
+                            li {
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+                            .form__list {
+                                margin-bottom: 10px;
+                                p {
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    color: #001a33;
+                                    margin-bottom: 2px;
+                                }
+                                input {
+                                    width: 278px;
+                                    height: 45px;
+                                    background: #eef2f9;
+                                    border: 1px solid #e7ecf3;
+                                    border-radius: 5px;
+                                    padding-left: 15px;
+                                    border: 1px solid #e7ecf3;
+                                    box-sizing: border-box;
+                                }
+                            }
                         }
                     }
                     .form__checkbox {
                         display: flex;
-                        margin-top: 14px;
+                        margin-top: 16px;
+                        width: 278px;
                         p {
                             font-size: 12px;
                             line-height: 15px;
@@ -89,9 +100,8 @@
                             }
                         }
                     }
-                }
-                .form__column2 {
                     .form__comment {
+                        margin-left: 29px;
                         p {
                             font-weight: 300;
                             font-size: 14px;
@@ -112,6 +122,7 @@
                     .form__submit {
                         width: 278px;
                         margin-top: 15px;
+                        margin-left: 29px;
                         height: 50px;
                         font-weight: bold;
                         text-align: center;
@@ -119,6 +130,20 @@
                         color: #ffffff;
                         background: #fd6612;
                         border-radius: 23.5px;
+                    }
+                    li {
+                        &:first-child {
+                            order: 0;
+                        }
+                        &:nth-child(2) {
+                            order: 3;
+                        }
+                        &:nth-child(3) {
+                            order: 2;
+                        }
+                        &:nth-child(4) {
+                            order: 4;
+                        }
                     }
                 }
             }
@@ -185,6 +210,91 @@
     li {
         &:nth-child(2) {
             margin: 0 18px;
+        }
+    }
+}
+
+@media (max-width: 960px) and (min-width: 640px) {
+    .footer {
+        padding-top: 38px;
+        height: 505px;
+        .container {
+            display: flex;
+            .form {
+                width: 56.25%;
+                height: auto;
+                bottom: 0;
+                padding: 30px 40px 23px;
+                h3 {
+                    margin-bottom: 21px;
+                }
+                form {
+                    .form__column {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .form__input {
+                            width: 100%;
+                            .form__lists {
+                                width: 100%;
+                                li {
+                                    width: 100%;
+                                    &:last-child {
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                                .form__list {
+                                    input {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        .form__checkbox {
+                            margin-top: 0;
+                        }
+                        .form__comment {
+                            margin-left: 0;
+                            width: 100%;
+                            textarea {
+                                width: 100%;
+                                height: 143px;
+                            }
+                        }
+                        .form__submit {
+                            width: 100%;
+                            margin-top: 3px;
+                            margin-left: 0;
+                            margin-bottom: 12px;
+                        }
+                        li {
+                            width: 100%;
+                            &:first-child {
+                                order: 0;
+                            }
+                            &:nth-child(2) {
+                                order: 4;
+                            }
+                            &:nth-child(3) {
+                                order: 2;
+                            }
+                            &:nth-child(4) {
+                                order: 3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer__block {
+        margin-right: 21px;
+        height: auto;
+        h2 {
+            margin-bottom: 30px;
+        }
+        h4 {
+            margin-top: 77px;
+            margin-bottom: 72px;
         }
     }
 }
