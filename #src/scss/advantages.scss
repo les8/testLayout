@@ -63,3 +63,39 @@
         }
     }
 }
+@media (max-width: 480px) and (min-width: 320px) {
+    .advantages {
+        padding: 66px 0 8px;
+        .container {
+            h2 {
+                margin-bottom: 27px;
+            }
+            ul {
+                li {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 42px;
+                    margin-right: 0;
+                    &:nth-child(even) {
+                        margin-right: 0;
+                    }
+                    &:nth-child(3) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .advantages__icon {
+            img {
+                margin-right: 0;
+                top: 0;
+                margin-bottom: 14px;
+            }
+        }
+        .advantages__info {
+            p {
+                width: 100%;
+            }
+        }
+    }
+}

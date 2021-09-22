@@ -80,3 +80,26 @@
         margin-left: 50px;
     }
 }
+
+@media (max-width: 480px) and (min-width: 320px) {
+    .menu__blocks {
+        justify-content: space-between;
+    }
+    .menu__logo {
+        padding: 15px 0 10px;
+        margin-right: 0;
+    }
+    .menu__nav {
+        display: none;
+    }
+    .menu__phone {
+        padding-top: 18px;
+        margin-left: 0;
+        a {
+            display: none;
+        }
+    }
+    .menu__burger {
+        display: inline-block;
+    }
+}

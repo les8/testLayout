@@ -56,3 +56,30 @@
         }
     }
 }
+@media (max-width: 480px) and (min-width: 320px) {
+    .copyright {
+        height: 180px;
+        padding: 38px 0 0;
+        margin-top: -7px;
+    }
+    .copyright__info {
+        display: block;
+
+        p {
+            margin-bottom: 47px;
+        }
+    }
+    .copyright__developer {
+        img {
+            position: relative;
+            top: 5px;
+            margin-right: 4px;
+        }
+        a {
+            span {
+                width: 151px;
+                display: inline-flex;
+            }
+        }
+    }
+}

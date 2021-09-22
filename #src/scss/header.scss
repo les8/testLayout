@@ -142,3 +142,58 @@
         }
     }
 }
+@media (max-width: 480px) and (min-width: 320px) {
+    .header {
+        background-position: top;
+        background-size: auto 100%;
+        height: auto;
+        padding-top: 50px;
+        h1 {
+            padding-top: 0;
+            margin: 0 auto 15px;
+        }
+        p {
+            width: 100%;
+            font-size: 16px;
+            line-height: 156.46%;
+            margin-bottom: -84px;
+        }
+        .form {
+            top: auto;
+            bottom: -119px;
+            background-size: 552% 119%;
+            padding: 33px 29px 43px;
+            h3 {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+            form {
+                display: block;
+                .form__column1 {
+                    display: block;
+                    li {
+                        width: 100%;
+                        margin-right: 0;
+                        &:last-child {
+                            width: 100%;
+                            input {
+                                width: 100%;
+                            }
+                        }
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+                .form__column2 {
+                    display: block;
+                    .form__submit {
+                        width: 100%;
+                        bottom: 0;
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

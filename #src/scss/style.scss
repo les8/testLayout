@@ -89,3 +89,25 @@ h5 {
         line-height: 38px;
     }
 }
+
+@media (max-width: 480px) and (min-width: 320px) {
+    .container {
+        max-width: 480px;
+        padding: 0 10px;
+    }
+    .wrapper {
+        max-width: 480px;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    h2 {
+        font-size: 26px;
+        line-height: 33px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}

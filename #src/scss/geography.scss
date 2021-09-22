@@ -71,3 +71,33 @@
         }
     }
 }
+@media (max-width: 480px) and (min-width: 320px) {
+    .geography {
+        padding-top: 169px;
+        padding-bottom: 46px;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            img {
+                width: 120%;
+                height: auto;
+                left: -11%;
+            }
+        }
+    }
+    .geography__info {
+        padding-top: 0;
+        position: relative;
+        width: 100%;
+        h3 {
+            font-size: 18px;
+            margin: 19px 0 11px;
+            width: 100%;
+        }
+        p {
+            font-size: 14px;
+            width: 100%;
+            margin-bottom: 11px;
+        }
+    }
+}

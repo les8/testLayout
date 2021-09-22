@@ -298,3 +298,92 @@
         }
     }
 }
+
+@media (max-width: 480px) and (min-width: 320px) {
+    .footer {
+        padding-top: 57px;
+        height: auto;
+        .container {
+            display: block;
+            .form {
+                width: 100vw;
+                left: -10px;
+                height: auto;
+                bottom: 0;
+                padding: 30px 40px 31px;
+                h3 {
+                    margin-bottom: 21px;
+                }
+                form {
+                    .form__column {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .form__input {
+                            width: 100%;
+                            .form__lists {
+                                width: 100%;
+                                li {
+                                    width: 100%;
+                                    &:last-child {
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                                .form__list {
+                                    input {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        .form__checkbox {
+                            margin-top: 0;
+                        }
+                        .form__comment {
+                            margin-left: 0;
+                            width: 100%;
+                            textarea {
+                                width: 100%;
+                                height: 143px;
+                            }
+                        }
+                        .form__submit {
+                            width: 100%;
+                            margin-top: 3px;
+                            margin-left: 0;
+                            margin-bottom: 12px;
+                        }
+                        li {
+                            width: 100%;
+                            &:first-child {
+                                order: 0;
+                            }
+                            &:nth-child(2) {
+                                order: 4;
+                            }
+                            &:nth-child(3) {
+                                order: 2;
+                            }
+                            &:nth-child(4) {
+                                order: 3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer__block {
+        margin-right: 0;
+        height: auto;
+        h2 {
+            margin-bottom: 28px;
+        }
+        h4 {
+            margin-top: 28px;
+            margin-bottom: 29px;
+        }
+        .footer__links {
+            margin-bottom: 46px;
+        }
+    }
+}
