@@ -9,7 +9,7 @@
 </head>
 <body>    
     <div class="wrapper">
-        <div class="menu">
+        <div class="menu" id='menu'>
             <div class="container">
                 <div class="menu__blocks">
                     <div class="menu__logo">
@@ -20,11 +20,11 @@
                         </div>
                     </div>
                     <nav class="menu__nav">
-                        <a href="">Главная</a>
-                        <a href="">Портфолио</a>
-                        <a href="">О нас</a>
-                        <a href="">География</a>
-                        <a href="">Контакты</a>
+                        <a href='#head'>Главная</a>
+                        <a href="#port">Портфолио</a>
+                        <a href="#abou">О нас</a>
+                        <a href="#geog">География</a>
+                        <a href="#cont">Контакты</a>
                     </nav>
                     <div class="menu__phone">
                         <a href="tel:+79022729314">
@@ -34,7 +34,8 @@
                 </div>
             </div>
         </div>
-        <header class="header">
+        <a name="head"></a>
+        <header class="header">            
             <div class="container">
                 <h1>Услуги по строительству<br>и ремонту железнодорожных путей</h1>
                 <p>Компания проводит строительные и ремонтные работы на территории более чем 20 субъектов Российской Федерации</p>
@@ -61,8 +62,9 @@
                     </form>
                 </div>
             </div>                
-        </header>        
-        <div class="geography">
+        </header>
+        <a name="geog"></a>        
+        <div class="geography">            
             <div class="container">
                 <div class="geography__info">
                     <h2>География работ</h2>
@@ -72,7 +74,8 @@
                 <img src="./img/pictures/geography.svg" alt="Map of Russia"><!--bullshit! скачанная картинка не соответствует той, что в макете-->
             </div>
         </div>
-        <div class="portfolio">
+        <a name="port"></a>
+        <div class="portfolio">            
             <div class="container">
                 <h2>Наше портфолио</h2>
                 <div class="portfolio__carusel">
@@ -167,7 +170,8 @@
                 </ul>
             </div>
         </div>
-        <div class="about">
+        <a name="abou"></a>
+        <div class="about">            
             <div class="container">
                 <h2>О нашей компании</h2>
                 <div class="about__info">
@@ -184,8 +188,9 @@
                 </div>
             </div>
             <img src="./img/pictures/about/railways.png" alt="railways" class="about__picture">
-        </div>        
-        <div class="footer">
+        </div>
+        <a name="cont"></a>        
+        <div class="footer">            
             <div class="container">
                 <div class="footer__block">
                     <h2>Контакты</h2>

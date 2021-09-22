@@ -13,3 +13,16 @@ testWebP(function (support) {
         document.querySelector('body').classList.add('no-webp');
     }
 });
+
+const menu = document.getElementById('menu');
+
+window.addEventListener('scroll', function() {
+    menu.style.position = 'sticky';        
+    this.setTimeout(menuRelative, 1500);
+  },
+);
+
+function menuRelative() {
+    menu.style.position = 'relative';
+};
+
